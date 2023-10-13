@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <!-- or -->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Bungee+Spice&family=League+Spartan:wght@300;400;500;600&family=Roboto:wght@100;300;400;700&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsividade.css">
+
+    </head>
+
+    <title>Fones de Ouvido</title>
+</head>
+
+<body>
+
+    <header>
+
+
+        <a href="#" class="logo"><i class='bx bx-headphone'></i>Soundbox</a>
+
+        <ul class="navegação">
+
+            <li><a href="#">Visão Geral</a></li>
+            <li><a href="#">Teach Specs</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div>
+
+    </header>
+
+    <section class="home">
+        <div class="home-img" id="home-img">
+            <img src="./imagens/product1.png" class="one">
+        </div>
+
+        <div class="home-text">
+
+            <h1>Wireless <br> Headphones</h1>
+            <h5>The smarter way to listen</h5>
+            <h3>$199.00</h3>
+            <a href="#" class="btn">Shop Now</a>
+
+        </div>
+
+    </section>
+
+    <div class="main">
+
+        <div class="row1">
+            <li><img src="./imagens/main1.png" onclick="slider('./imagens/main1.png')"></li>
+        </div>
+
+        <div class="row2">
+            <li><img src="./imagens/main2.png" onclick="slider('./imagens/main2.png')"></li>
+        </div>
+
+        <div class="row3">
+            <li><img src="./imagens/main3.png" onclick="slider('./imagens/main3.png')"></li>
+        </div>
+
+    </div>
+
+    <script>
+
+        function slider(img) {
+
+            var elemento = document.getElementById("home-img");
+             elemento.innerHTML=`<img src=${img}>`
+        }
+
+
+
+    </script>
+</body>
+
+
+</html>
